@@ -12,6 +12,8 @@ const form = document.getElementById('locationInput');
 const search = document.querySelector('.search');
 const btn = document.querySelector('.submit');
 const cities = document.querySelectorAll('.city');
+const uvOutput = document.querySelector(`.uv`)
+const precipitationOutput = document.querySelector(`.precipitation`)
 
 let cityInput = "Colombo";
 
@@ -109,6 +111,9 @@ function fetchWeatherData() {
             cloudOutput.innerHTML = data.current.cloud + "%";
             humidityOutput.innerHTML = data.current.humidity + "%";
             windOutput.innerHTML = data.current.wind_kph + "km/h";
+            uvOutput.innerHTML = data.current.uv;
+            precipitationOutput.innerHTML = data.current.precip_mm + " mm";
+
 
             let timeOfDay = "day";
             if (!data.current.is_day) {
