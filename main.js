@@ -134,7 +134,7 @@ function fetchWeatherData() {
                 iconCode == 1076 || iconCode == 1079 || iconCode == 1082
             ) {
                 // Cloudy weather
-                app.style.backgroundImage = `url('./img/cloudy_day.jpg')`;
+                app.style.backgroundImage = `url('./img/cloudy_da.jpg')`;
                 btn.style.background = "#fa6d1b";
                 if (timeOfDay == "night") {
                     btn.style.background = "#181e27";
@@ -145,7 +145,7 @@ function fetchWeatherData() {
                 iconCode == 1069 || iconCode == 1087 || iconCode == 1076 || iconCode == 1079
             ) {
                 // Rainy weather
-                app.style.backgroundImage = `url('./img/rainy_day.jpg')`;
+                app.style.backgroundImage = `url('./img/rainy_day.webp')`;
                 btn.style.background = "#5b9bd5";
                 if (timeOfDay == "night") {
                     btn.style.background = "#2c3e50";
